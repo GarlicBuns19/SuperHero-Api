@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(61, 72, 73);
+    background-color: #1c1c1c;
 }
 .row{
     margin: 20px;
@@ -9,6 +9,7 @@ body{
 }
 #heroData{
     text-align: center !important;
+    color: aliceblue;
 }
 .Male{
     border: 10px solid blue;
