@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(61, 72, 73);
+}
+.row{
+    margin: 20px;
+}
+#heroImg{
+    border-radius: 30px !important;
+}
+#heroData{
+    text-align: center !important;
+}
+.Male{
+    border: 10px solid blue;
+}
+.Female{
+    border: 10px solid pink;
+}
