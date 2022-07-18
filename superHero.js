@@ -9,7 +9,8 @@ async function displayHero(url){
     .then(res => res.json())
     .then(data => data.forEach((hero)=>{
         console.log(hero.id)
-        console.log(hero.name   )
+        console.log(hero.name)
+        console.log(hero['images'].lg  )
     }))
     try{
         console.log('Success')
