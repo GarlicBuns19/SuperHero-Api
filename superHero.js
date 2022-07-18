@@ -15,6 +15,8 @@ async function displayHero(url) {
           <div class="col-6" id="heroData">
             <h1>${hero.name}</h1>
             <h2 class="${hero.appearance.gender}">${hero.appearance.gender}</h2>
+            <h2>${hero.appearance.race}</h2>
+            <h2>${hero.appearance.height[1]}</h2>
           </div>
         </div>
         `;
