@@ -1,23 +1,32 @@
-superHeroUrl = ('https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/')
+superHeroUrl = "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/";
 
-function heroLayout(){
+const row = document.querySelector(".row");
 
-};
-
-async function displayHero(url){
-    let data =  await fetch(url + 'all.json')
-    .then(res => res.json())
-    .then(data => data.forEach((hero)=>{
-        console.log(hero.id)
-        console.log(hero.name)
-        console.log(hero['images'].lg  )
-    }))
-    try{
-        console.log('Success')
-    }
-    catch(error){
-        console.log(error)
-    }
-    return data
+function heroLayout() {
+  row.innerHTML = `
+ <h1></h1>
+        <div class="col-6" id="heroImg"></div>
+        <div class="col-6" id="heroData"></div>
+ `;
 }
-displayHero(superHeroUrl)
+
+async function displayHero(url) {
+  let data = await fetch(url + "all.json")
+    .then((res) => res.json())
+    .then((data) =>
+      data.forEach((hero) => {
+        row.innerHTML += `<button>${hero.id} ${hero.name}</button>`
+        console.log(hero.id);
+
+        // console.log(hero.name);
+        // console.log(hero["images"].lg);
+      })
+    );
+  try {
+    console.log("Success");
+  } catch (error) {
+    console.log(error);
+  }
+  return data;
+}
+displayHero(superHeroUrl);
