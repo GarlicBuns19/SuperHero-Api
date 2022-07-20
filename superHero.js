@@ -9,14 +9,17 @@ async function displayHero(url) {
       data.forEach((hero) => {
         container.innerHTML += `
         <div class="row">
-          <div class="col-6">
+          <div class="col-md-6 col-sm-12">
             <img src="${hero.images.sm}" alt="" class="img-fluid ${hero.appearance.gender}" id="heroImg">
           </div>
-          <div class="col-6" id="heroData">
+          <div class="col-md-6 col-sm-12" id="heroData">
             <h1>${hero.name}</h1>
-            <h2 class="${hero.appearance.gender}">${hero.appearance.gender}</h2>
-            <h2>${hero.appearance.race}</h2>
-            <h2>${hero.appearance.height[1]}</h2>
+            <h2>Gender</h2>
+            <h3 class="${hero.appearance.gender}">${hero.appearance.gender}</h3>
+            <h2>Race</h2>
+            <h3>${hero.appearance.race}</h3>
+            <h2>Height</h2>
+            <h3>${hero.appearance.height[1]}</h3>
           </div>
         </div>
         `;

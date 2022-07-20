@@ -3,6 +3,8 @@ body{
 }
 .row{
     margin: 20px;
+    border: 10px solid #E5E5E5;
+    border-radius: 30px;
 }
 #heroImg{
     border-radius: 30px !important;
@@ -13,7 +15,26 @@ body{
 }
 .Male{
     border: 10px solid blue;
+    border-radius: 30px;
 }
 .Female{
     border: 10px solid pink;
+    border-radius: 30px;
+}
+h1{
+    text-align: center;
+    color: white;
+
+}
+#heroData h1{
+    text-align: center;
+    color: orangered;
+    font-size: 50px ;
+}
+#heroData h2{
+    font-size: 35px;
+    text-decoration: underline;
+}
+#heroData h3{
+    color: white;
 }
